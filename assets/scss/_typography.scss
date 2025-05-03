@@ -1,8 +1,14 @@
 /* typography */
-@import url('https://github.com/spherestudiospace/spherestudiospace/raw/refs/heads/main/assets/fonts/ABCWhyteVariable-Trial.ttf');
+@font-face {
+  font-family: 'ABC Whyte Variable';
+  src: url('https://github.com/spherestudiospace/spherestudiospace/raw/refs/heads/main/assets/fonts/ABCWhyteVariable-Trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
-  font-family: $font-tertiary;
+  font-family: 'ABC Whyte Variable';
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: $body-text-size;
@@ -25,7 +31,7 @@ p,
 }
 
 .h1, .h2, .h3, .h4, .h5, h1, h2, h3, h4, h5 {
-  font-family: $font-primary;
+  font-family: 'ABC Whyte Variable';
   margin: 0;
   line-height: 1.3;
   color: $black;
