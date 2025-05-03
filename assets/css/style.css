@@ -862,7 +862,7 @@ footer::after {
   z-index: 9992;
   transition: background-color .25s, transform .5s cubic-bezier(.2, 1, .2, 1);
   will-change: transform;
-  font-family: Martel, sans-serif
+  font-family: "ABC Whyte Variable", sans-serif
 }
 
 .navigation.header-scrollable {
