@@ -86,16 +86,15 @@
 </div>
 <!-- end of navigation -->
 
-<!-- start of main-section -->
 <section data-barba="wrapper">
-  <main data-barba="container" data-barba-namespace="loader">
+  <main data-barba="container" data-barba-namespace="single">
 
     <!-- start of loader -->
     <div class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light">
   <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle></svg>
 </div>
     <!-- end of loader -->
-
+    
     <div class="content-block">
       <!-- start of page-header -->
       <div class="page-header section position-relative">
@@ -103,14 +102,10 @@
           <div class="row justify-content-center">
             <div class="col-lg-10">
               <div class="text-center">
-                <p class="small text-uppercase mb-4">I'm Mogen</p>
+                <p class="small text-uppercase mb-4">03 min read</p>
                 <div class="section-title text-center">
-                  <h1 class="title">About Me</h1>
+                  <h1 class="title">Stay focused by always asking yourself one key question</h1>
                 </div>
-              </div>
-
-              <div class="rotate-circle">
-                <svg class="rotateOnScroll circle-text bg-dark" viewBox="0 0 460 460"><defs><path id="circle-button-text" d="M230,380 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"></path></defs><text class="text-uppercase" style="font-size:40px;letter-spacing:7px"><textPath fill="white" href="#circle-button-text">hello — I am mogen — about me — </textPath></text></svg>
               </div>
             </div>
           </div>
@@ -118,153 +113,104 @@
       </div>
       <!-- end of page-header -->
 
-      <!-- start of about -->
-      <!-- start of biography -->
-      <section class="section bg-light-soft adjust-rotate-circle-spacing">
+      <!-- start of blog details -->
+      <section class="bg-light-soft blog-details-image">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-8 col-lg-10 mx-auto text-center">
-              <div class="section-title text-center mb-6">
-                <h2 class="title h3 pt-3">Biography</h2>
-              </div>
-
-              <p class="lead">For almost 5 years now, I have been creating web and mobile experiences and I have fun every day creating interactions in my interfaces. As a Digital Designer, I am here to make you stand out in the digital world. The combination of my passion for design and your vision will ensure a great end result.</p>
-
-              <div class="text-center mt-5"><a class="btn-link" href="#!"><svg class="me-2" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 20L18 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 4V16M12 16L15.5 12.5M12 16L8.5 12.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>Download Resume</a>
-              </div>
+          <div class="row justify-content-center">
+            <!-- blog-image -->
+            <div class="col-lg-10 text-center">
+              <img class="img-fluid rounded" loading="lazy" src="assets/images/blog/07.jpg" alt="blog post thumbnail">
             </div>
           </div>
         </div>
       </section>
-      <!-- end of biography -->
-      
+
+      <!-- blog-content -->
+      <section class="bg-light-soft section blog-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-2 order-1 order-md-0 mt-6 mt-md-0">
+              <div class="position-sticky" style="top:150px">
+                <span class="d-inline-block mb-3">SHARE</span>
+                <ul class="social-icon">
+                  <li class="btn d-inline-block d-md-block me-2 mb-2" onclick="return tbs_click()"><i class="lab la-twitter"></i></li>
+                  <li class="btn d-inline-block d-md-block me-2 mb-2" onclick="return fbs_click()"><i class="lab la-facebook-f"></i></li>
+                  <li class="btn d-inline-block d-md-block me-2 mb-2" onclick="return ins_click()"><i class="lab la-linkedin-in"></i></li>
+                  <li class="btn d-inline-block d-md-block me-2 mb-2" onclick="return red_click()"><i class="lab la-reddit"></i></li>
+                  <li class="btn d-inline-block d-md-block me-2 mb-2" onclick="return pin_click()"><i class="lab la-pinterest-p"></i></li>
+                </ul>
+              </div>
+              <script type="text/javascript">
+                var pageLink = window.location.href;
+                var pageTitle = String(document.title).replace(/\&/g, '%26');
+                function tbs_click(){pageLink = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageLink}`;socialWindow(pageLink, 570, 570);}
+                function fbs_click(){pageLink = `https://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`;socialWindow(pageLink, 570, 570);}
+                function ins_click(){pageLink = `https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`;socialWindow(pageLink, 570, 570);}
+                function red_click(){pageLink = `https://www.reddit.com/submit?url=${pageLink}`;socialWindow(pageLink, 570, 570);}
+                function pin_click() {pageLink = `https://www.pinterest.com/pin/create/button/?&text=${pageTitle}&url=${pageLink}&description=${pageTitle}`;socialWindow(pageLink, 570, 570);}
+                function socialWindow(pageLink, width, height){var left = (screen.width - width) / 2;var top = (screen.height - height) / 2;var params = "menubar=no,toolbar=no,status=no,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left;window.open(pageLink,"",params);}
+              </script>
+            </div>
+            <div class="col-md-8 order-0 order-md-2">
+              <div class="content">
+                <h3>We all have goals</h3>
+                <p>We all have goals. They might be as simple as cleaning the house or as ambitious as winning an Olympic medal. Setting goals is easy, but achieving them is hard, as we let ourselves get distracted with all the other stuff life throws at us.</p>
+
+                <p>Now we’ve all been taught that focus is essential if we want to reach our goals. But I’ve heard that phrase so many times it started to feel a bit empty. That was until last week, when I read a story about a rowing team that wanted to win a particular race. I don’t recall the specifics, but I remember how they applied focus to everything they did.</p>
+
+                <h4>Every time they had to make decisions</h4>
+                <p>Every time they had to make decisions, they all asked themselves and each other: Does it make the boat go faster? It was that simple. When someone asked: “Do we need new shirts for the team?” The reply would be: “Does it make the boat go faster? If yes, get me those new shirts today. If not or uncertain, new shirts are a distraction we don’t need.”</p>
+
+                <h4>The real challenge here</h4>
+                <p>The real challenge here, of course, is finding that one single thing you want to achieve. When you’d ask a rowing team what their main goal is, they might first tell you: “We want to improve teamwork,” We want to participate in the Olympics,” or “We want to win the race.”</p>
+
+                <img loading="lazy" src="assets/images/blog/08.jpg" alt="blog post image">
+                
+                <p>It takes a more profound understanding of strategy to arrive at something as simple as, “We want to make the boat go faster.” So how to apply this to your own life? Find out what the single driver for success is in your project, job or organization. Then structure that as a question, and say no to everything else.</p>
+              </div>
+
+              <hr class="my-5">
+
+              <p>Published September 26, 2021 - 11:09 PM UTC</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of blog details -->
+
+      <!-- start of blog -->
       <section class="section">
         <div class="container">
-          <div class="row g-5 justify-content-center">
-            <div class="col-lg-4 col-10">
-              <div class="about-image position-sticky pe-0 pe-lg-6">
-                <img class="img-fluid rounded-pill" src="assets/images/author.jpg" alt="author">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="section-title mb-6">
+                <h2 class="title">Relates Postes</h2>
               </div>
             </div>
-            <div class="col-lg-6 mt-0 mt-lg-5">
-              <!-- start of education -->
-              <div class="section pt-lg-0">
-                <div class="section-title mb-5">
-                  <h2 class="title h3">Education</h2>
-                </div>
-  
-                <div class="row g-4">
-                  <div class="col-sm-6">
-                    <small>2020</small>
-                    <h3 class="h5 my-1 font-tertiary">Art Direction</h3>
-                    <p class="text-muted">Sint Lucas University</p>
-                  </div>
-                  <div class="col-sm-6">
-                    <small>2018</small>
-                    <h3 class="h5 my-1 font-tertiary">Interaction Design</h3>
-                    <p class="text-muted">University of Houston, US</p>
-                  </div>
-                  <div class="col-sm-6">
-                    <small>2015</small>
-                    <h3 class="h5 my-1 font-tertiary">UI/UX Design</h3>
-                    <p class="text-muted">QTURO University</p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of education -->
-              
-              <!-- start of experience -->
-              <div>
-                <div class="section-title mb-5">
-                  <h2 class="title h3">Experience</h2>
-                </div>
+          </div>
+          <div class="row g-5 justify-content-center">
+            <div class="col-lg-5 col-md-6 text-center">
+              <a class="d-block mb-5 blog-thumbnail overflow-hidden rounded" href="#!"><img class="img-fluid rounded" loading="lazy" src="assets/images/blog/03.jpg" alt="blog post thumbnail"></a>
+              <ul class="text-uppercase small mb-3 list-inline">
+                <li class="list-inline-item"><a href="#!" class="btn-link font-tertiary">customer</a></li>
+              </ul>
+              <h3 class="mb-3"><a class="text-dark text-hover-underline-slim" href="#!">Build a customer-obsessed digital business agency</a></h3>
 
-                <div class="row g-4">
-                  <div class="col-sm-6">
-                    <small>Jan 2021 — Present</small>
-                    <h3 class="h5 my-1 font-tertiary">Art Director</h3>
-                    <p class="text-muted">New JSC, UK</p>
-                  </div>
-                  <div class="col-sm-6">
-                    <small>Jan 2018 — Dec 2020</small>
-                    <h3 class="h5 my-1 font-tertiary">UI/UX Designer</h3>
-                    <p class="text-muted">Tripadvisor Ltd, UK</p>
-                  </div>
-                  <div class="col-sm-6">
-                    <small>Jan 2017 — May 2017</small>
-                    <h3 class="h5 my-1 font-tertiary">Design Internship</h3>
-                    <p class="text-muted">CRM Studio, UK</p>
-                  </div>
-                  <div class="col-sm-6">
-                    <small>June 2017 — Oct 2017</small>
-                    <h3 class="h5 my-1 font-tertiary">Front-end Internship</h3>
-                    <p class="text-muted">CRM Studio, UK</p>
-                  </div>
-                </div>
-              </div>
-              <!-- end of experience -->
+              <span class="font-primary lh-1">06 min read</span>
+            </div>
+            <div class="col-lg-5 col-md-6 text-center">
+              <a class="d-block mb-5 blog-thumbnail overflow-hidden rounded" href="#!"><img class="img-fluid rounded" loading="lazy" src="assets/images/blog/04.jpg" alt="blog post thumbnail"></a>
+              <ul class="text-uppercase small mb-3 list-inline">
+                <li class="list-inline-item"><a href="#!" class="btn-link font-tertiary">people</a></li>
+              </ul>
+              <h3 class="mb-3"><a class="text-dark text-hover-underline-slim" href="#!">Forget ‘networking’ — just connect with people you find interesting</a></h3>
 
-              <!-- start of competences & tools -->
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="section pb-0">
-                    <div class="section-title mb-5">
-                      <h2 class="title h3">Competences</h2>
-                    </div>
-
-                    <div class="row g-3">
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">UX / UI Design</p>
-                      </div>
-                      
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">UX Research</p>
-                      </div>
-                      
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">Web Development</p>
-                      </div>
-                      
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">DA - Motion</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="section pb-0">
-                    <div class="section-title mb-5">
-                      <h2 class="title h3">Tools</h2>
-                    </div>
-
-                    <div class="row g-3">
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">Figma</p>
-                      </div>
-                      
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">Sketch</p>
-                      </div>
-                      
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">Adobe suite</p>
-                      </div>
-                      
-                      <div class="col-12">
-                        <p class="h5 font-tertiary">HTML - CSS - JS</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end of competences & tools -->
-
+              <span class="font-primary lh-1">03 min read</span>
             </div>
           </div>
         </div>
       </section>
-      <!-- end of about -->
+      <!-- end of blog -->
 
       <!-- start of cta -->
 <section class="section bg-light-soft">
@@ -310,9 +256,8 @@
 </footer>
 <!-- end of footer -->
     </div>
-  </div>
+  </main>
 </section>
-<!-- end of main-section -->
 
 <!-- JS files -->
 <script src="plugins/jquery/jquery.min.js"></script>

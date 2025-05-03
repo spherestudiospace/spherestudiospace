@@ -1,316 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Projects — UI/UX Designer Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Showcasing a UI/UX Designer&#039;s portfolio with innovative designs">
-        <meta property="og:description" content="Showcasing a UI/UX Designer&#039;s portfolio with innovative designs">
-        <meta property="og:title" content="Projects — UI/UX Designer Portfolio">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
-</head>
-<body class="antialiased bg-body text-body font-body">
-    <div class="">
-                
-      <section x-data="{ mobileNavOpen: false }" class="overflow-hidden">
-        <nav class="relative px-10 xl:px-20 py-7 xl:py-4">
-          <div class="flex items-center justify-between">
-            <a class="pr-4 lg:pr-0" href="#">
-              <img class="h-10" src="mirga-assets/images/logos/mirga-dark-logo3.svg" alt="">
-            </a>
-            <div class="hidden xl:w-full xl:absolute xl:top-1/2 xl:left-1/2 xl:transform xl:-translate-y-1/2 xl:-translate-x-1/2 xl:flex items-center justify-center gap-14">
-              <div class="flex gap-16">
-      <a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">About Mirga</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Products</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Journey</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Pricing Plans</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Knowledge Base</a>
-      </div>
-            </div>
-            <a class="hidden xl:inline-flex justify-center items-center text-center h-16 p-5 font-semibold tracking-tight text-xl hover:text-white focus:text-white bg-transparent hover:bg-neutral-900 focus:bg-neutral-900 border border-neutral-900 rounded-lg focus:ring-4 focus:ring-neutral-400 transition duration-200" href="#">Get in Touch</a>
-            <button x-on:click="mobileNavOpen = !mobileNavOpen" class="xl:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewbox="0 0 34 14" fill="none"><g clip-path="url(#clip0_231_4713)"><rect width="34" height="3" rx="1.5" fill="#19191B"></rect><rect y="11" width="34" height="3" rx="1.5" fill="#19191B"></rect></g><defs><clippath id="clip0_231_4713"><rect width="34" height="14" fill="white"></rect></clippath></defs></svg>
-            </button>
+<html lang="en"><head>
+
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- title -->
+  <title>Mogen - Portfolio HTML Template</title>
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="plugins/spinner/spinner.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.custom.min.css">
+  <link rel="stylesheet" href="plugins/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css">
+
+  <!-- main stylesheet -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head><body class="has-noise">
+  <!-- start of scroll-progress -->
+  <div class="scroll-progress position-fixed">
+    <div class="scroll-bar"></div>
+  </div>
+  <!-- end of scroll-progress -->
+
+  <!-- start of cursor -->
+  <div class="cursor"></div>
+  <!-- end of cursor -->
+
+<!-- start of navigation -->
+<div class="adjust-navigation-height"></div>
+
+<header class="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md px-0 py-3 py-lg-4">
+          <!-- navbar logo -->
+          <a class="navbar-brand font-weight-bold mb-0" href="/" title="Mogen">
+            <img src="assets/images/logo.png" alt="Mogen">
+          </a>
+  
+          <!-- navbar-toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="navbar-menu">
+            <svg viewBox="0 0 341.333 341.333"> <g> <g> <rect y="277.333" width="341.333" height="42.667"/> </g> </g> <g> <g> <rect y="149.333" width="341.333" height="42.667"/> </g> </g> <g> <g> <rect y="21.333" width="341.333" height="42.667"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+          </button>
+            
+          <!-- navbar links -->
+          <div class="navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mt-3 mt-md-0">
+              <li class="nav-item">
+                <a class="btn btn-sm" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </nav>
-        <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50">
-          <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-black opacity-20"></div>
-          <nav class="relative p-8 w-full h-full bg-white overflow-y-auto">
-            <div class="flex flex-col justify-between h-full">
-              <div class="flex items-center justify-between">
-                <a class="pr-4" href="#">
-                  <img class="h-10" src="mirga-assets/images/logos/mirga-dark-logo3.svg" alt="">
-                </a>
-                <button x-on:click="mobileNavOpen = !mobileNavOpen">
-                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 18L18 6M6 6L18 18" stroke="#252E4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-              </div>
-              <div class="flex flex-col gap-8 py-16">
-      <a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">About Mirga</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Products</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Journey</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Pricing Plans</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Knowledge Base</a>
       </div>
-              <div class="flex flex-col items-center gap-2"><a class="inline-flex justify-center items-center text-center w-full h-16 p-5 font-semibold tracking-tight text-xl hover:text-white focus:text-white bg-transparent hover:bg-neutral-900 focus:bg-neutral-900 border border-neutral-900 rounded-lg focus:ring-4 focus:ring-neutral-400 transition duration-200" href="#">Get in Touch</a></div>
-            </div>
-          </nav>
-        </div>
-      </section>
-                
-      <section class="py-12 md:py-24 bg-neutral-900">
-        <div class="container mx-auto px-4">
-          <div class="mb-12 md:mb-28 max-w-3xl">
-            <h1 class="mb-10 text-6xl sm:text-9xl xl:text-11xl text-white font-semibold font-heading">Client Testimonials</h1>
-            <p class="text-2xl text-neutral-400 font-semibold tracking-tight">Our strength lies in a creative and skilled team.</p>
-          </div>
-          <div class="px-10 py-16 border border-neutral-600 rounded-4xl">
-            <div class="flex flex-wrap -m-5">
-              <div class="w-full p-5">
-                <div class="flex flex-wrap xl:items-center -m-8">
-                  <div class="w-full md:w-1/2 xl:w-2/3 p-8">
-                    <div class="overflow-hidden rounded-4xl" style="height: 464px;">
-                      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1658219377461-956189f62c71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwxOHx8aW5ub3ZhdGl2ZSUyMFVYJTIwZGVzaWdufGVufDB8Mnx8fDE3NDYyOTE5ODV8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=888&amp;h=464" alt="">
-                    </div>
-                  </div>
-                  <div class="w-full md:w-1/2 xl:w-1/3 p-8">
-                    <span class="inline-block mb-2 text-xl text-neutral-400 font-semibold tracking-tight">Project Overview</span>
-                    <h6 class="mb-6 text-5xl text-white font-medium tracking-tight font-heading">Weddedone Digital</h6>
-                    <p class="mb-20 text-xl font-medium text-neutral-400 tracking-tight max-w-md">Harness the potential of data with our innovative analytics solutions. Discover meaningful insights into customer behavior, market dynamics, and performance metrics to steer your strategic choices.</p>
-                    <a class="inline-flex items-center justify-center text-center h-16 p-5 font-semibold text-lg text-white tracking-tight bg-neutral-800 hover:bg-neutral-700 focus:bg-neutral-700 rounded-lg focus:ring-4 focus:ring-neutral-800 transition duration-200" href="#">View Project</a>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full p-5">
-                <div class="flex flex-wrap xl:items-center -m-8">
-                  <div class="w-full md:w-1/2 xl:w-2/3 p-8">
-                    <div class="overflow-hidden rounded-4xl" style="height: 464px;">
-                      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1658219377461-956189f62c71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwxOHx8aW5ub3ZhdGl2ZSUyMFVYJTIwZGVzaWdufGVufDB8Mnx8fDE3NDYyOTE5ODV8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=888&amp;h=464" alt="">
-                    </div>
-                  </div>
-                  <div class="w-full md:w-1/2 xl:w-1/3 p-8">
-                    <span class="inline-block mb-2 text-xl text-neutral-400 font-semibold tracking-tight">Project Overview</span>
-                    <h6 class="mb-6 text-5xl text-white font-medium tracking-tight font-heading">Antopastroph</h6>
-                    <p class="mb-20 text-xl font-medium text-neutral-400 tracking-tight max-w-md">Harness the potential of data with our innovative analytics solutions. Discover meaningful insights into customer behavior, market dynamics, and performance metrics to steer your strategic choices.</p>
-                    <a class="inline-flex items-center justify-center text-center h-16 p-5 font-semibold text-lg text-white tracking-tight bg-neutral-800 hover:bg-neutral-700 focus:bg-neutral-700 rounded-lg focus:ring-4 focus:ring-neutral-800 transition duration-200" href="#">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="overflow-hidden">
-        <div class="bg-neutral-900">
-          <div class="py-3 border-b border-neutral-600">
-            <div class="container mx-auto px-4">
-              <div class="flex justify-between flex-wrap gap-4">
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-      <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Support Center</a><a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Our Address</a>
-      </div>
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-                  <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Get in Touch</a>
-                  <div class="flex items-center gap-6 flex-wrap">
-                    <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Back to Top</a>
-                    <a class="relative text-white hover:text-opacity-80 transition duration-200" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19.5" transform="rotate(90 20 20)" fill="currentColor" stroke="#E5E5E7"></circle></svg>
-                      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
-                          <path d="M6.41225 12.1235L9.60066 8.93506L12.7891 12.1235" stroke="#19191B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-12 pb-20 md:pb-40">
-            <div class="container mx-auto px-4">
-              <div class="flex flex-wrap -mx-4">
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Our Products</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Creative Design</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Mobile Apps</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">API Integrations</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Multi-Device Compatibility</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight focus-within:transition duration-200" href="#">Creative Design</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Check Out Our Demo</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Live Chat Support</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Knowledge Base</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">System Status</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Support Desk</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Mirga Academy</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Community Hub</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Upcoming Events</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Tutorial Videos</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Latest System Update</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Our Company</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Who We Are</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Meet the Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Join Our Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Success Stories</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Insights Blog</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Media Resources</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Locations We Serve</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Tailored Solutions</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Business Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Consultation Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Learning Resources</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Get in Touch</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Contact Sales Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Frequently Asked Questions</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Online Chat</a></li>
-                  </ul>
-                </div>
-                <div class="w-full lg:w-1/2 xl:w-1/3 p-4">
-                  <h2 class="text-white text-lg font-medium tracking-tight mb-6">Subscribe to Our Newsletter</h2>
-                  <form class="mb-6" action="#">
-                    <div class="flex flex-wrap -m-2">
-                      <div class="w-full sm:flex-1 p-2">
-                        <input class="w-full px-8 py-5 outline-none rounded-lg placeholder-neutral-600 font-medium focus:ring-4 focus:ring-neutral-100 transition duration-200" type="text" placeholder="Your Email">
-                      </div>
-                      <div class="w-full sm:w-auto p-2">
-                        <button class="flex justify-center items-center text-center h-full w-full p-5 font-semibold tracking-tight text-lg bg-green-200 hover:bg-green-100 focus:bg-green-100 rounded-lg focus:ring-4 focus:ring-green-200 focus:ring-opacity-50 transition duration-200" type="submit">Explore More</button>
-                      </div>
-                    </div>
-                  </form>
-                  <p class="text-neutral-400 text-sm font-medium max-w-sm tracking-tight">Receive essential strategies and insights to elevate your business straight to your inbox</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-neutral-800 py-6">
-          <div class="container mx-auto px-4">
-            <div class="flex items-center gap-12 flex-wrap">
-              <a href="#">
-                <img src="mirga-assets/images/logos/mirga-light-logo.svg" alt="">
-              </a>
-              <p class="text-neutral-400 font-medium tracking-tight">© Shuffle 2025. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="overflow-hidden">
-        <div class="bg-neutral-900">
-          <div class="py-3 border-b border-neutral-600">
-            <div class="container mx-auto px-4">
-              <div class="flex justify-between flex-wrap gap-4">
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-      <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Support Center</a><a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Our Address</a>
-      </div>
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-                  <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Get in Touch</a>
-                  <div class="flex items-center gap-6 flex-wrap">
-                    <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Back to Top</a>
-                    <a class="relative text-white hover:text-opacity-80 transition duration-200" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19.5" transform="rotate(90 20 20)" fill="currentColor" stroke="#E5E5E7"></circle></svg>
-                      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
-                          <path d="M6.41225 12.1235L9.60066 8.93506L12.7891 12.1235" stroke="#19191B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-12 pb-20 md:pb-40">
-            <div class="container mx-auto px-4">
-              <div class="flex flex-wrap -mx-4">
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Our Products</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Creative Design</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Mobile Apps</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">API Integrations</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Multi-Device Compatibility</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight focus-within:transition duration-200" href="#">Creative Design</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Check Out Our Demo</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Live Chat Support</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Knowledge Base</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">System Status</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Support Desk</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Mirga Academy</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Community Hub</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Upcoming Events</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Tutorial Videos</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Latest System Update</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Our Company</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Who We Are</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Meet the Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Join Our Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Success Stories</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Insights Blog</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Media Resources</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Locations We Serve</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Tailored Solutions</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Business Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Consultation Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Learning Resources</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Get in Touch</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Contact Sales Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Frequently Asked Questions</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Online Chat</a></li>
-                  </ul>
-                </div>
-                <div class="w-full lg:w-1/2 xl:w-1/3 p-4">
-                  <h2 class="text-white text-lg font-medium tracking-tight mb-6">Subscribe to Our Newsletter</h2>
-                  <form class="mb-6" action="#">
-                    <div class="flex flex-wrap -m-2">
-                      <div class="w-full sm:flex-1 p-2">
-                        <input class="w-full px-8 py-5 outline-none rounded-lg placeholder-neutral-600 font-medium focus:ring-4 focus:ring-neutral-100 transition duration-200" type="text" placeholder="Your Email">
-                      </div>
-                      <div class="w-full sm:w-auto p-2">
-                        <button class="flex justify-center items-center text-center h-full w-full p-5 font-semibold tracking-tight text-lg bg-green-200 hover:bg-green-100 focus:bg-green-100 rounded-lg focus:ring-4 focus:ring-green-200 focus:ring-opacity-50 transition duration-200" type="submit">Explore More</button>
-                      </div>
-                    </div>
-                  </form>
-                  <p class="text-neutral-400 text-sm font-medium max-w-sm tracking-tight">Receive essential strategies and insights to elevate your business straight to your inbox</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-neutral-800 py-6">
-          <div class="container mx-auto px-4">
-            <div class="flex items-center gap-12 flex-wrap">
-              <a href="#">
-                <img src="mirga-assets/images/logos/mirga-light-logo.svg" alt="">
-              </a>
-              <p class="text-neutral-400 font-medium tracking-tight">© Shuffle 2025. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
-</body>
-</html>
+  </div>
+</header>
+<!-- end of navigation -->
 
+<!-- default preloader -->
+<div class="preloader">
+  <div class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light">
+  <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle></svg>
+</div>
+</div>
+<!-- end of navigation -->
+
+<section data-barba="wrapper">
+  <main data-barba="container" data-barba-namespace="loader">
+
+    <!-- start of loader -->
+    <div class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light">
+  <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle></svg>
+</div>
+    <!-- end of loader -->
+    
+    <div class="content-block">
+      <!-- start of page-header -->
+      <div class="page-header section position-relative">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center">
+                <p class="small text-uppercase mb-4">portfolio</p>
+                <div class="section-title text-center">
+                  <h1 class="title">Projects</h1>
+                </div>
+              </div>
+
+              <div class="rotate-circle">
+                <svg class="rotateOnScroll circle-text bg-dark" viewBox="0 0 460 460"><defs><path id="circle-button-text" d="M230,380 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"></path></defs><text class="text-uppercase" style="font-size:38px;letter-spacing:7px"><textPath fill="white" href="#circle-button-text">All Recent Projects — Portfolio — </textPath></text></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of page-header -->
+
+      <!-- start of projects -->
+      <section class="section bg-light-soft adjust-rotate-circle-spacing">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="row justify-content-between g-6 project-page">
+                <div class="col-md-6">
+                  <a class="project-block d-block text-reset" data-color="#f3e0d8" href="project-single.html">
+                    <div class="project-image rounded overflow-hidden">
+                      <img class="w-100 rounded" src="assets/images/projects/01.jpg" alt="">
+                    </div>
+                    <div class="project-content d-flex align-items-center justify-content-between mt-4">
+                      <div>
+                        <h3 class="mb-1">Soul Whisperer</h3>
+                        <p class="mb-0">Consectetur adipisicing elitic dolorum</p>
+                      </div>
+                      <div class="icon ms-4">
+                        <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E"> <g id="Group-12" transform="translate(170.000000, 2211.000000)"> <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z" id="Combined-Shape" transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path> </g> </g> </g> </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a class="project-block d-block text-reset" data-color="#fee3cd" href="project-single.html">
+                    <div class="project-image rounded overflow-hidden">
+                      <img class="w-100 rounded" src="assets/images/projects/02.jpg" alt="">
+                    </div>
+                    <div class="project-content d-flex align-items-center justify-content-between mt-4">
+                      <div>
+                        <h3 class="mb-1">Lava</h3>
+                        <p class="mb-0">Consectetur adipisicing elit. Hic, dolorum.</p>
+                      </div>
+                      <div class="icon ms-4">
+                        <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E"> <g id="Group-12" transform="translate(170.000000, 2211.000000)"> <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z" id="Combined-Shape" transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path> </g> </g> </g> </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a class="project-block d-block text-reset" data-color="#d6dcf5" href="project-single.html">
+                    <div class="project-image rounded overflow-hidden">
+                      <img class="w-100 rounded" src="assets/images/projects/03.jpg" alt="">
+                    </div>
+                    <div class="project-content d-flex align-items-center justify-content-between mt-4">
+                      <div>
+                        <h3 class="mb-1">Avatar</h3>
+                        <p class="mb-0">We explored avatars that deviate from human form</p>
+                      </div>
+                      <div class="icon ms-4">
+                        <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E"> <g id="Group-12" transform="translate(170.000000, 2211.000000)"> <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z" id="Combined-Shape" transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path> </g> </g> </g> </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a class="project-block d-block text-reset" data-color="#feeecd" href="project-single.html">
+                    <div class="project-image rounded overflow-hidden">
+                      <img class="w-100 rounded" src="assets/images/projects/04.jpg" alt="">
+                    </div>
+                    <div class="project-content d-flex align-items-center justify-content-between mt-4">
+                      <div>
+                        <h3 class="mb-1">Mark's Chocolate</h3>
+                        <p class="mb-0">Consectetur adipisicing elit. Hic, dolorum.</p>
+                      </div>
+                      <div class="icon ms-4">
+                        <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E"> <g id="Group-12" transform="translate(170.000000, 2211.000000)"> <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z" id="Combined-Shape" transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path> </g> </g> </g> </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a class="project-block d-block text-reset" data-color="#f8d3d4" href="project-single.html">
+                    <div class="project-image rounded overflow-hidden">
+                      <img class="w-100 rounded" src="assets/images/projects/05.jpg" alt="">
+                    </div>
+                    <div class="project-content d-flex align-items-center justify-content-between mt-4">
+                      <div>
+                        <h3 class="mb-1">Sol Mexican Grill</h3>
+                        <p class="mb-0">Sol Mexican Grill is a Mexican restaurant</p>
+                      </div>
+                      <div class="icon ms-4">
+                        <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E"> <g id="Group-12" transform="translate(170.000000, 2211.000000)"> <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z" id="Combined-Shape" transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path> </g> </g> </g> </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a class="project-block d-block text-reset" data-color="#d8f3e6" href="project-single.html">
+                    <div class="project-image rounded overflow-hidden">
+                      <img class="w-100 rounded" src="assets/images/projects/06.jpg" alt="">
+                    </div>
+                    <div class="project-content d-flex align-items-center justify-content-between mt-4">
+                      <div>
+                        <h3 class="mb-1">AKERMUS</h3>
+                        <p class="mb-0">It is a skincare brand based in Canada</p>
+                      </div>
+                      <div class="icon ms-4">
+                        <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E"> <g id="Group-12" transform="translate(170.000000, 2211.000000)"> <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z" id="Combined-Shape" transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path> </g> </g> </g> </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of projects -->
+
+      <!-- start of cta -->
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+              <p class="small text-uppercase mb-4">Do you like my work?</p>
+              <div class="section-title text-center">
+                <h2 class="title">Let’s make a wonderful <br> <span class="text-primary loop-text text-underline"><span>website</span><span>experience</span><span>direction</span><span>strategy</span></span> together!</h2>
+              </div>
+              <a class="btn mt-6" href="contact.html">Get in touch!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of cta -->
+
+      <!-- start of footer -->
+      <footer class="footer-alt">
+        <div class="container">
+          <div class="block" style="background-image:url(assets/images/footer-bg.jpg)">
+            <div class="row gx-0 gx-md-4 gy-4 justify-content-center">
+              <div class="col-lg-5 text-center text-lg-start order-1 order-lg-0">
+                <ul class="list-inline mb-3">
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="#!">Facebook</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="#!">Twitter</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="#!">Instagram</a></li>
+                </ul>
+                <p class="small">&copy; Copyright, Riazz Mogen</p>
+              </div>
+              <div class="col-lg-5 text-center text-lg-end order-0 order-lg-1">
+                <ul class="list-inline mb-3">
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="about.html">About</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="services.html">Services</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="projects.html">Projects</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="blog.html">Blog</a></li>
+                </ul>
+                <p class="small">Contact at <a class="btn-link text-white" href="mailto:hello@mogen.io">hello@mogen.io</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+    </div>
+  </main>
+</section>
+
+<!-- JS files -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/swiper/swiper-bundle.min.js"></script>
+<script src="plugins/barba/barba.umd.js"></script>
+<script src="plugins/barba/barba-css.umd.js"></script>
+
+<!-- Main Script -->
+<script src="assets/js/script.js"></script>
+
+</body></html>

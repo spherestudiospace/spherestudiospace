@@ -1,383 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Contact — UI/UX Designer Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Showcasing a UI/UX Designer&#039;s portfolio with innovative designs">
-        <meta property="og:description" content="Showcasing a UI/UX Designer&#039;s portfolio with innovative designs">
-        <meta property="og:title" content="Contact — UI/UX Designer Portfolio">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
-</head>
-<body class="antialiased bg-body text-body font-body">
-    <div class="">
-                
-      <section x-data="{ mobileNavOpen: false }" class="overflow-hidden">
-        <nav class="relative px-10 xl:px-20 py-7 xl:py-4">
-          <div class="flex items-center justify-between">
-            <a class="pr-4 lg:pr-0" href="#">
-              <img class="h-10" src="mirga-assets/images/logos/mirga-dark-logo3.svg" alt="">
-            </a>
-            <div class="hidden xl:w-full xl:absolute xl:top-1/2 xl:left-1/2 xl:transform xl:-translate-y-1/2 xl:-translate-x-1/2 xl:flex items-center justify-center gap-14">
-              <div class="flex gap-16">
-      <a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">About Mirga</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Products</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Story</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Pricing Plans</a><a class="inline-block text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Useful Resources</a>
-      </div>
-            </div>
-            <a class="hidden xl:inline-flex justify-center items-center text-center h-16 p-5 font-semibold tracking-tight text-xl hover:text-white focus:text-white bg-transparent hover:bg-neutral-900 focus:bg-neutral-900 border border-neutral-900 rounded-lg focus:ring-4 focus:ring-neutral-400 transition duration-200" href="#">Get in Touch</a>
-            <button x-on:click="mobileNavOpen = !mobileNavOpen" class="xl:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewbox="0 0 34 14" fill="none"><g clip-path="url(#clip0_231_4713)"><rect width="34" height="3" rx="1.5" fill="#19191B"></rect><rect y="11" width="34" height="3" rx="1.5" fill="#19191B"></rect></g><defs><clippath id="clip0_231_4713"><rect width="34" height="14" fill="white"></rect></clippath></defs></svg>
-            </button>
+<html lang="en"><head>
+
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- title -->
+  <title>Mogen - Portfolio HTML Template</title>
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="plugins/spinner/spinner.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.custom.min.css">
+  <link rel="stylesheet" href="plugins/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css">
+
+  <!-- main stylesheet -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head><body class="has-noise">
+  <!-- start of scroll-progress -->
+  <div class="scroll-progress position-fixed">
+    <div class="scroll-bar"></div>
+  </div>
+  <!-- end of scroll-progress -->
+
+  <!-- start of cursor -->
+  <div class="cursor"></div>
+  <!-- end of cursor -->
+
+<!-- start of navigation -->
+<div class="adjust-navigation-height"></div>
+
+<header class="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md px-0 py-3 py-lg-4">
+          <!-- navbar logo -->
+          <a class="navbar-brand font-weight-bold mb-0" href="/" title="Mogen">
+            <img src="assets/images/logo.png" alt="Mogen">
+          </a>
+  
+          <!-- navbar-toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="navbar-menu">
+            <svg viewBox="0 0 341.333 341.333"> <g> <g> <rect y="277.333" width="341.333" height="42.667"/> </g> </g> <g> <g> <rect y="149.333" width="341.333" height="42.667"/> </g> </g> <g> <g> <rect y="21.333" width="341.333" height="42.667"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+          </button>
+            
+          <!-- navbar links -->
+          <div class="navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mt-3 mt-md-0">
+              <li class="nav-item">
+                <a class="btn btn-sm" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </nav>
-        <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50">
-          <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-black opacity-20"></div>
-          <nav class="relative p-8 w-full h-full bg-white overflow-y-auto">
-            <div class="flex flex-col justify-between h-full">
-              <div class="flex items-center justify-between">
-                <a class="pr-4" href="#">
-                  <img class="h-10" src="mirga-assets/images/logos/mirga-dark-logo3.svg" alt="">
-                </a>
-                <button x-on:click="mobileNavOpen = !mobileNavOpen">
-                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 18L18 6M6 6L18 18" stroke="#252E4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-              </div>
-              <div class="flex flex-col gap-8 py-16">
-      <a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">About Mirga</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Products</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Our Story</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Pricing Plans</a><a class="inline-block max-w-max text-lg tracking-tight font-semibold hover:text-opacity-80 transition duration-200" href="#">Useful Resources</a>
       </div>
-              <div class="flex flex-col items-center gap-2"><a class="inline-flex justify-center items-center text-center w-full h-16 p-5 font-semibold tracking-tight text-xl hover:text-white focus:text-white bg-transparent hover:bg-neutral-900 focus:bg-neutral-900 border border-neutral-900 rounded-lg focus:ring-4 focus:ring-neutral-400 transition duration-200" href="#">Get in Touch</a></div>
-            </div>
-          </nav>
-        </div>
-      </section>
-                
-      <section class="py-12 md:py-24 bg-neutral-50">
-        <div class="container mx-auto px-4">
-          <div class="max-w-2xl mx-auto">
-            <div class="mb-4 pt-12 px-12 pb-16 bg-white rounded-4xl">
-              <div class="mb-10 border-b border-neutral-100">
-                <h4 class="mb-10 font-semibold text-5xl sm:text-6xl md:text-8xl font-heading">Get in Touch</h4>
-                <span class="mb-4 inline-block text-xl text-neutral-600 font-semibold tracking-tight">Visit Us</span>
-                <div class="flex flex-wrap -m-2 mb-3">
-                  <div class="w-full md:w-1/2 p-2">
-                    <p class="text-4xl font-medium max-w-xs tracking-tight">Mirga LTD, 1400 Cherokee Rd, Florence, SC 293501, United States</p>
-                  </div>
-                  <div class="w-full md:w-1/2 p-2">
-                    <ul class="flex flex-wrap md:justify-end -m-1.5">
-                      <li class="p-1.5">
-                        <a class="flex items-center justify-center w-12 h-12 bg-neutral-50 hover:bg-opacity-80 rounded-full transition duration-200" href="#">
-                          <img class="h-5" src="mirga-assets/images/contact/fb.svg" alt="">
-                        </a>
-                      </li>
-                      <li class="p-1.5">
-                        <a class="flex items-center justify-center w-12 h-12 bg-neutral-50 hover:bg-opacity-80 rounded-full transition duration-200" href="#">
-                          <img class="h-5" src="mirga-assets/images/contact/instagram.svg" alt="">
-                        </a>
-                      </li>
-                      <li class="p-1.5">
-                        <a class="flex items-center justify-center w-12 h-12 bg-neutral-50 hover:bg-opacity-80 rounded-full transition duration-200" href="#">
-                          <img class="h-5" src="mirga-assets/images/contact/x.svg" alt="">
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <span class="pb-10 inline-block text-lg text-neutral-600 font-semibold tracking-tight">Business Hours: 9 AM - 5 PM</span>
-              </div>
-              <div class="flex flex-wrap -m-4">
-                <div class="w-full md:w-1/2 p-4">
-                  <span class="inline-block text-neutral-600 font-semibold tracking-tight">Contact Number</span>
-                  <h4 class="text-2xl font-medium tracking-tight font-heading">+41 337003 00</h4>
-                </div>
-                <div class="w-full md:w-1/2 p-4">
-                  <span class="inline-block text-neutral-600 font-semibold tracking-tight">Email Address</span>
-                  <h4 class="text-2xl font-medium tracking-tight font-heading">hi@contactmigra.com</h4>
-                </div>
-              </div>
-            </div>
-            <div class="pt-12 px-12 pb-20 bg-white rounded-4xl">
-              <span class="mb-4 inline-block text-xl text-neutral-600 font-semibold tracking-tight">Your Messages</span>
-              <h6 class="mb-10 text-4xl font-medium max-w-xs tracking-tight">Please complete this quick form</h6>
-              <div class="mb-6">
-                <label class="inline-block mb-3 font-medium text-neutral-600 tracking-tight" for="contact5-label1">Full Name</label>
-                <input class="block py-4 px-8 w-full font-medium text-lg text-neutral-600 placeholder-neutral-600 outline-none border border-neutral-100 focus:ring-4 focus:ring-neutral-50 rounded-lg transition duration-200" id="contact5-label1" type="text" placeholder="Name">
-              </div>
-              <div class="mb-6">
-                <label class="inline-block mb-3 font-medium text-neutral-600 tracking-tight" for="contact5-label2">Professional Email</label>
-                <input class="block py-4 px-8 w-full font-medium text-lg text-neutral-600 placeholder-neutral-600 outline-none border border-neutral-100 focus:ring-4 focus:ring-neutral-50 rounded-lg transition duration-200" id="contact5-label2" type="text" placeholder="Email">
-              </div>
-              <div class="mb-6">
-                <label class="inline-block mb-3 font-medium text-neutral-600 tracking-tight" for="contact5-label3">Contact Number</label>
-                <input class="block py-4 px-8 w-full font-medium text-lg text-neutral-600 placeholder-neutral-600 outline-none border border-neutral-100 focus:ring-4 focus:ring-neutral-50 rounded-lg transition duration-200" id="contact5-label3" type="text" placeholder="+3 (33) 03333-33">
-              </div>
-              <div class="mb-6">
-                <label class="inline-block mb-3 font-medium text-neutral-600 tracking-tight" for="contact5-label4">Email Subject</label>
-                <select class="block py-4 px-8 w-full font-medium text-lg text-neutral-600 placeholder-neutral-600 outline-none border border-neutral-100 focus:ring-4 focus:ring-neutral-50 rounded-lg transition duration-200" id="contact5-label4" name="subject">
-                  <option value="" disabled selected>Select One</option>
-                  <option value="business">General Inquiry</option>
-                  <option value="work">Project Inquiry</option>
-                  <option value="sales">Sales Inquiry</option>
-                  <option value="taxes">Tax Inquiry</option>
-                </select>
-              </div>
-              <div class="mb-6">
-                <label class="inline-block mb-3 font-medium text-neutral-600 tracking-tight" for="contact5-label5">Your Message</label>
-                <textarea class="block w-full py-4 px-8 text-xl text-neutral-600 font-medium placeholder-neutral-600 outline-none rounded-lg border border-neutral-100 focus:ring-4 focus:ring-neutral-50 transition duration-200" id="contact5-label5" name="name" rows="4" placeholder="Your space to ask question"></textarea>
-              </div>
-              <label class="relative flex flex-wrap items-center gap-4 mb-8">
-                <input class="input-checkbox-contact-1-05 opacity-0 absolute h-8 w-8 rounded-full" type="checkbox" name="field-checkbox" value="checkbox-value">
-                <div class="border border-neutral-600 w-8 h-8 flex justify-center items-center rounded-full">
-                  <svg class="fill-current hidden" xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewbox="0 0 15 11" fill="none"><line x1="0.353553" y1="5.64645" x2="4.35355" y2="9.64645" stroke="currentColor"></line><line x1="14.3536" y1="0.353553" x2="4.35355" y2="10.3536" stroke="currentColor"></line></svg>
-                </div>
-                <span class="text-neutral-500 text-lg font-medium tracking-tight">I agree to the terms and privacy policy.</span>
-              </label>
-              <button class="inline-flex justify-center items-center text-center h-16 p-5 font-semibold tracking-tight text-lg text-white bg-neutral-900 hover:bg-neutral-800 focus:bg-neutral-800 rounded-lg focus:ring-4 focus:ring-neutral-400 transition duration-200" type="submit">Submit Message</button>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="bg-neutral-50 py-16">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-end -mx-4">
-            <div class="w-full lg:w-1/2 p-4">
-              <div class="bg-white rounded-3xl py-10 px-6 md:px-12">
-                <span class="inline-block text-neutral-600 font-semibold mb-4 tracking-tight">Become a Part of Our Community</span>
-                <h6 class="text-5xl font-medium mb-12 tracking-tight font-heading">Subscribe to Our Newsletter</h6>
-                <form class="mb-6" action="#">
-                  <div class="flex flex-wrap -m-0.5">
-                    <div class="w-full sm:flex-1 p-2">
-                      <input class="w-full px-8 py-5 bg-neutral-50 outline-none rounded-lg placeholder-neutral-600 font-medium focus:ring-4 focus:ring-neutral-100 transition duration-200" type="text" placeholder="Your Email">
-                    </div>
-                    <div class="w-full sm:w-auto p-2">
-                      <button class="flex justify-center items-center text-center h-full w-full p-5 font-semibold tracking-tight text-lg text-white bg-neutral-900 hover:bg-neutral-800 focus:bg-neutral-800 rounded-lg focus:ring-4 focus:ring-neutral-400 transition duration-200" type="submit">Sign Up Today</button>
-                    </div>
-                  </div>
-                </form>
-                <p class="text-neutral-600 text-sm font-medium tracking-tight">Receive insights, resources, and tips to elevate your strategy.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="overflow-hidden">
-        <div class="bg-neutral-900">
-          <div class="py-3 border-b border-neutral-600">
-            <div class="container mx-auto px-4">
-              <div class="flex justify-between flex-wrap gap-4">
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-      <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Support Center</a><a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Our Location</a>
-      </div>
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-                  <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Get in Touch</a>
-                  <div class="flex items-center gap-6 flex-wrap">
-                    <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Return to Top</a>
-                    <a class="relative text-white hover:text-opacity-80 transition duration-200" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19.5" transform="rotate(90 20 20)" fill="currentColor" stroke="#E5E5E7"></circle></svg>
-                      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
-                          <path d="M6.41225 12.1235L9.60066 8.93506L12.7891 12.1235" stroke="#19191B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-12 pb-20 md:pb-40">
-            <div class="container mx-auto px-4">
-              <div class="flex flex-wrap -mx-4">
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Product Overview</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Design Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Our Applications</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">System Integrations</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Compatible Devices</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight focus-within:transition duration-200" href="#">Design Showcase</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Explore Our Demo</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Live Chat Support</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Helpful Resources</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Service Status</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Support Desk</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Migra Academy</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Our Community</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Upcoming Events</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Video Tutorials</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">System Updates</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Company Overview</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">About Us</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Meet the Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Career Opportunities</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Client Testimonials</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Our Blog</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Media Coverage</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Find Us</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Tailored Solutions</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Business Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Consultation Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Educational Resources</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Get in Touch</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Contact Sales Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Frequently Asked Questions</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Chat Live</a></li>
-                  </ul>
-                </div>
-                <div class="w-full lg:w-1/2 xl:w-1/3 p-4">
-                  <h2 class="text-white text-lg font-medium tracking-tight mb-6">Sign Up for Our Newsletter Today</h2>
-                  <form class="mb-6" action="#">
-                    <div class="flex flex-wrap -m-2">
-                      <div class="w-full sm:flex-1 p-2">
-                        <input class="w-full px-8 py-5 outline-none rounded-lg placeholder-neutral-600 font-medium focus:ring-4 focus:ring-neutral-100 transition duration-200" type="text" placeholder="Your Email">
-                      </div>
-                      <div class="w-full sm:w-auto p-2">
-                        <button class="flex justify-center items-center text-center h-full w-full p-5 font-semibold tracking-tight text-lg bg-green-200 hover:bg-green-100 focus:bg-green-100 rounded-lg focus:ring-4 focus:ring-green-200 focus:ring-opacity-50 transition duration-200" type="submit">More Information</button>
-                      </div>
-                    </div>
-                  </form>
-                  <p class="text-neutral-400 text-sm font-medium max-w-sm tracking-tight">Get valuable ideas and resources sent straight to your inbox.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-neutral-800 py-6">
-          <div class="container mx-auto px-4">
-            <div class="flex items-center gap-12 flex-wrap">
-              <a href="#">
-                <img src="mirga-assets/images/logos/mirga-light-logo.svg" alt="">
-              </a>
-              <p class="text-neutral-400 font-medium tracking-tight">© Shuffle 2025. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="overflow-hidden">
-        <div class="bg-neutral-900">
-          <div class="py-3 border-b border-neutral-600">
-            <div class="container mx-auto px-4">
-              <div class="flex justify-between flex-wrap gap-4">
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-      <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Support Center</a><a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Our Location</a>
-      </div>
-                <div class="flex items-center gap-6 sm:gap-18 flex-wrap">
-                  <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Get in Touch</a>
-                  <div class="flex items-center gap-6 flex-wrap">
-                    <a class="text-white font-medium hover:text-opacity-80 tracking-tight transition duration-200" href="#">Return to Top</a>
-                    <a class="relative text-white hover:text-opacity-80 transition duration-200" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19.5" transform="rotate(90 20 20)" fill="currentColor" stroke="#E5E5E7"></circle></svg>
-                      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
-                          <path d="M6.41225 12.1235L9.60066 8.93506L12.7891 12.1235" stroke="#19191B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-12 pb-20 md:pb-40">
-            <div class="container mx-auto px-4">
-              <div class="flex flex-wrap -mx-4">
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Product Overview</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Design Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Our Applications</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">System Integrations</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Compatible Devices</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight focus-within:transition duration-200" href="#">Design Showcase</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Explore Our Demo</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Live Chat Support</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Helpful Resources</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Service Status</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Support Desk</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Migra Academy</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Our Community</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Upcoming Events</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Video Tutorials</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">System Updates</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Company Overview</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">About Us</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Meet the Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Career Opportunities</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Client Testimonials</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Our Blog</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Media Coverage</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Find Us</a></li>
-                  </ul>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-4">
-                  <h2 class="text-white text-xl font-medium tracking-tight mb-8">Tailored Solutions</h2>
-                  <ul class="flex flex-col gap-4">
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Business Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Consultation Services</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Educational Resources</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Get in Touch</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Contact Sales Team</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Frequently Asked Questions</a></li>
-                    <li><a class="text-neutral-300 font-medium hover:text-neutral-400 tracking-tight transition duration-200" href="#">Chat Live</a></li>
-                  </ul>
-                </div>
-                <div class="w-full lg:w-1/2 xl:w-1/3 p-4">
-                  <h2 class="text-white text-lg font-medium tracking-tight mb-6">Sign Up for Our Newsletter Today</h2>
-                  <form class="mb-6" action="#">
-                    <div class="flex flex-wrap -m-2">
-                      <div class="w-full sm:flex-1 p-2">
-                        <input class="w-full px-8 py-5 outline-none rounded-lg placeholder-neutral-600 font-medium focus:ring-4 focus:ring-neutral-100 transition duration-200" type="text" placeholder="Your Email">
-                      </div>
-                      <div class="w-full sm:w-auto p-2">
-                        <button class="flex justify-center items-center text-center h-full w-full p-5 font-semibold tracking-tight text-lg bg-green-200 hover:bg-green-100 focus:bg-green-100 rounded-lg focus:ring-4 focus:ring-green-200 focus:ring-opacity-50 transition duration-200" type="submit">More Information</button>
-                      </div>
-                    </div>
-                  </form>
-                  <p class="text-neutral-400 text-sm font-medium max-w-sm tracking-tight">Get valuable ideas and resources sent straight to your inbox.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-neutral-800 py-6">
-          <div class="container mx-auto px-4">
-            <div class="flex items-center gap-12 flex-wrap">
-              <a href="#">
-                <img src="mirga-assets/images/logos/mirga-light-logo.svg" alt="">
-              </a>
-              <p class="text-neutral-400 font-medium tracking-tight">© Shuffle 2025. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
-</body>
-</html>
+  </div>
+</header>
+<!-- end of navigation -->
 
+<!-- default preloader -->
+<div class="preloader">
+  <div class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light">
+  <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle></svg>
+</div>
+</div>
+<!-- end of navigation -->
+
+<section data-barba="wrapper">
+  <main data-barba="container" data-barba-namespace="loader">
+
+    <!-- start of loader -->
+    <div class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light">
+  <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle></svg>
+</div>
+    <!-- end of loader -->
+    
+    <div class="content-block">
+      <!-- start of page-header -->
+      <div class="page-header section position-relative">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center">
+                <p class="small text-uppercase mb-4">Contact</p>
+                <div class="section-title text-center">
+                  <h1 class="title">Get in touch</h1>
+                </div>
+              </div>
+
+              <div class="rotate-circle">
+                <svg class="rotateOnScroll circle-text bg-dark" viewBox="0 0 460 460"><defs><path id="circle-button-text" d="M230,380 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"></path></defs><text class="text-uppercase" style="font-size:40px;letter-spacing:6px"><textPath fill="white" href="#circle-button-text">Contact — Get in touch — Hola — </textPath></text></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of page-header -->
+
+      <!-- start of contact info -->
+      <section class="section bg-light-soft adjust-rotate-circle-spacing">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="row g-5">
+                <div class="col-lg-4">
+                  <div class="section-title mb-4">
+                    <h2 class="title h3">Find me on</h2>
+                  </div>
+    
+                  <p class="mb-2"><a class="btn-link-alt" href="#!">Dribbble</a></p>
+                  <p><a class="btn-link-alt" href="#!">Behance</a></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="section-title mb-4">
+                    <h2 class="title h3">Contact Details</h2>
+                  </div>
+    
+                  <p class="mb-2"><a class="btn-link-alt" href="mailto:hello@mogen.io">hello@mogen.io</a></p>
+                  <p><a class="btn-link-alt" href="tel:+31869235">+31 6 869 235</a></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="section-title mb-4">
+                    <h2 class="title h3">Business Details</h2>
+                  </div>
+    
+                  <p class="mb-2">CoC: 56971536</p>
+                  <p>VAT: FR006953208D08</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of contact info -->
+
+      <!-- start of contact form -->
+      <section class="section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="section-title mb-6">
+                <h2 class="title">Let’s talk</h2>
+              </div>
+              
+              <!-- you can use https://formspree.io/ -->
+              <form action="" method="post">
+                <div class="row g-5">
+                  <div class="col-12">
+                    <label for="contact_name" class="small text-uppercase mb-2">My Name is*</label>
+                    <input type="email" class="form-control h3" id="contact_name" placeholder="Mathew" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="contact_email" class="small text-uppercase mb-2">My Email is*</label>
+                    <input type="email" class="form-control h3" id="contact_email" placeholder="E-mail" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="contact_message" class="small text-uppercase mb-2">My Message is*</label>
+                    <textarea class="form-control h3" id="contact_message" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn mt-3" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+
+              
+              <div class="section pb-0">
+                <div class="section-title mb-5">
+                  <h2 class="title">What next?</h2>
+                </div>
+                <p>1. I’ll hear back to you within 48 hours.</p>
+                <p>2. If needed, I can sign an NDA to protect your intellectual property.</p>
+                <p>3. I’ll arrange a free consultation to discuss your needs and how I can help.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of contact form -->
+
+      <!-- start of footer adjust block -->
+      <section class="section bg-light-soft pb-0"></section>
+      <!-- end of footer adjust block -->
+
+      <!-- start of footer -->
+      <footer>
+        <div class="container bg-light-soft">
+          <div class="block" style="background-image:url(assets/images/footer-bg.jpg)">
+            <div class="row gx-0 gx-md-4 gy-4 justify-content-center">
+              <div class="col-lg-5 text-center text-lg-start order-1 order-lg-0">
+                <ul class="list-inline mb-3">
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="#!">Facebook</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="#!">Twitter</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="#!">Instagram</a></li>
+                </ul>
+                <p class="small">&copy; Copyright, Riazz Mogen</p>
+              </div>
+              <div class="col-lg-5 text-center text-lg-end order-0 order-lg-1">
+                <ul class="list-inline mb-3">
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="about.html">About</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="services.html">Services</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="projects.html">Projects</a></li>
+                  <li class="list-inline-item"><a class="text-hover-underline-initial text-white" href="blog.html">Blog</a></li>
+                </ul>
+                <p class="small">Contact at <a class="btn-link text-white" href="mailto:hello@mogen.io">hello@mogen.io</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+    </div>
+  </main>
+</section>
+
+<!-- JS files -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/swiper/swiper-bundle.min.js"></script>
+<script src="plugins/barba/barba.umd.js"></script>
+<script src="plugins/barba/barba-css.umd.js"></script>
+
+<!-- Main Script -->
+<script src="assets/js/script.js"></script>
+
+</body></html>
