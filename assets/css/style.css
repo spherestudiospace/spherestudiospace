@@ -1,9 +1,8 @@
 @font-face {
   font-family: "ABC Whyte Variable";
-  src: url('assets/fonts/ABCWhyteVariable-Trial.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  src: url('https://github.com/spherestudiospace/spherestudiospace/blob/4624f9ff73838214e44a3c7740aa7870da330080/assets/fonts/ABCWhyteVariable-Trial.ttfhttps://github.com/spherestudiospace/spherestudiospace/raw/refs/heads/main/assets/fonts/ABCWhyteVariable-Trial.ttf') format('truetype');
+  font-weight: regular;
+  font-style: regular;
 }
 
 body {
