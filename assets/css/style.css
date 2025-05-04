@@ -1,12 +1,13 @@
-@import url(https://fonts.googleapis.com/css2?family=Scope+One&family=Martel:wght@400;600;700&family=Poppins:wght@400;500&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: IBM Plex Sans, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
   line-height: 1.75;
   overflow-x: hidden;
+  position: relative;
   color: #777
 }
 
@@ -35,7 +36,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Scope One", serif;
+  font-family: "Funnel Display", serif;
   margin: 0;
   line-height: 1.3;
   color: #000
@@ -131,7 +132,7 @@ h6 {
 
 .btn {
   padding: 19px 35px;
-  font-family: Martel, sans-serif;
+  font-family: Funnel Display, sans-serif;
   font-size: 1rem;
   line-height: 1;
   position: relative;
@@ -200,7 +201,7 @@ h6 {
 }
 
 .btn-link {
-  font-family: Martel, sans-serif;
+  font-family: Funnel Display, sans-serif;
   display: inline-flex;
   align-items: flex-start
 }
@@ -692,15 +693,15 @@ textarea.form-control {
 }
 
 .font-primary {
-  font-family: "Scope One", serif
+  font-family: Funnel Display, serif
 }
 
 .font-secondary {
-  font-family: Martel, sans-serif
+  font-family: Funnel Display, sans-serif
 }
 
 .font-tertiary {
-  font-family: Poppins, sans-serif
+  font-family: IBM Plex Sans, sans-serif
 }
 
 .font-weight-400 {
@@ -856,7 +857,7 @@ footer::after {
   z-index: 9992;
   transition: background-color .25s, transform .5s cubic-bezier(.2, 1, .2, 1);
   will-change: transform;
-  font-family: Martel, sans-serif
+  font-family: Funnel Display, sans-serif
 }
 
 .navigation.header-scrollable {
